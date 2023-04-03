@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  display: flex;
+  margin: 100px 50px 50px 50px;
+  font-family: sans-serif;
+  justify-content: space-between;
+}
+
+.game-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+  border: 8px solid transparent;
+  border-image: linear-gradient(
+    12deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 120, 1) 34%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-image-slice: 1;
+  font-size: 0;
+  box-sizing: content-box;
+  padding: 0;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(
+    12deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 120, 1) 34%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.cell {
+  flex-basis: 200px;
+  height: 200px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    12deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 120, 1) 34%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-image-slice: 1;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+
+  transition: background 0.1s;
+  font-size: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+.cell:hover {
+  background-color: #f1f1f1;
+} */
+
+.current-player {
+  width: 300px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(
+    12deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 120, 1) 34%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(
+    12deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 120, 1) 34%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
